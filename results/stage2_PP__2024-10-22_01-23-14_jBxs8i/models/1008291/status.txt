@@ -1,0 +1,11 @@
+battle_won_mean : 0
+test_return_mean : 17.96875
+test_return_std : 17.018343733674556
+test_episode_limit_mean : 0.734375
+test_ep_length_mean : 181.390625
+test_episode_completion_mean : 0.003924920550252545
+return_mean : 38.125
+return_std : 4.635124054434789
+episode_limit_mean : 0.171875
+ep_length_mean : 150.015625
+episode_completion_mean : 0.007506466921636996

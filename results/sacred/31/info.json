@@ -1,0 +1,42 @@
+{
+  "meta_loss": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -0.050694630364887416
+    },
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -0.06654517175047658
+    },
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -0.039011161687085405
+    },
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -0.024034595146076754
+    },
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -0.0268945065618027
+    },
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -0.04282878234516829
+    }
+  ],
+  "meta_loss_T": [
+    25600,
+    51200,
+    76800,
+    102400,
+    128000,
+    153600
+  ]
+}

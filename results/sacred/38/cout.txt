@@ -1,0 +1,301 @@
+[INFO 07:14:35] pymarl Running command 'my_main'
+[INFO 07:14:35] pymarl Started run with ID "38"
+[DEBUG 07:14:35] pymarl Starting Heartbeat
+[DEBUG 07:14:35] my_main Started
+[INFO 07:14:35] my_main Experiment Parameters:
+[INFO 07:14:35] my_main 
+
+{   'agent': 'rnn',
+    'batch_size': 1024,
+    'batch_size_run': 32,
+    'buffer_cpu_only': True,
+    'buffer_size': 32,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'cur_episodes': 32,
+    'env': 'stag_hunt',
+    'env_args': {   'agent_move_block': [   0,
+                                            1,
+                                            2],
+                    'agent_obs': [   2,
+                                     2],
+                    'capture_action': False,
+                    'capture_action_conditions': [   2,
+                                                     1],
+                    'capture_conditions': [   0,
+                                              1],
+                    'capture_freezes': False,
+                    'capture_terminal': False,
+                    'directed_cone_narrow': True,
+                    'directed_exta_actions': True,
+                    'directed_observations': False,
+                    'episode_limit': 200,
+                    'intersection_global_view': False,
+                    'intersection_unknown': False,
+                    'is_print': False,
+                    'miscapture_punishment': 0,
+                    'mountain_agent_row': -1,
+                    'mountain_slope': 0.0,
+                    'mountain_spawn': False,
+                    'n_agents': 2,
+                    'n_hare': 0,
+                    'n_stags': 4,
+                    'need_render': False,
+                    'observe_ids': False,
+                    'observe_one_hot': False,
+                    'observe_state': False,
+                    'observe_walls': False,
+                    'p_hare_rest': 0.0,
+                    'p_stags_rest': 0.0,
+                    'prevent_cannibalism': True,
+                    'print_caught_prey': False,
+                    'print_frozen_agents': False,
+                    'random_ghosts': False,
+                    'random_ghosts_indicator': False,
+                    'random_ghosts_mul': -1,
+                    'random_ghosts_prob': 0.5,
+                    'remove_frozen': True,
+                    'reward_collision': 0,
+                    'reward_hare': 1,
+                    'reward_stag': 10,
+                    'reward_time': 0,
+                    'state_as_graph': False,
+                    'toroidal': False,
+                    'world_shape': [   10,
+                                       10]},
+    'episodes_per_teammate': 64,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'exp_name': 'stage1_PP',
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'ind': 'stage1',
+    'inner_loop_episodes': 128,
+    'label': 'default_label',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'local_saves_path': 'saves',
+    'log_interval': 10000,
+    'lr': 0.0005,
+    'mac': 'basic',
+    'meta_update_times': 8,
+    'n_sub_modules': 4,
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimize_meta': True,
+    'points_per_teammate': 64,
+    'pop': 'stage1',
+    'population_alg': 'vdn',
+    'population_size': 4,
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'meta',
+    'runner_log_interval': 10000,
+    'save_BR': False,
+    'save_BR_episodes': 2048,
+    'save_model': False,
+    'save_model_interval': 2000000,
+    'save_population': True,
+    'save_population_episodes': 2048,
+    'save_replay': False,
+    'seed': 425399533,
+    't_max': 5000000,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 32,
+    'test_percent': 0.2,
+    'train_test_split': False,
+    'use_cuda': True,
+    'use_history': False,
+    'use_tensorboard': True,
+    'z_dim': 8}
+
+[INFO 07:14:39] my_main ================ MetaEpoch: 0 ================
+[INFO 07:14:39] my_main Time passed: 0 seconds
+[INFO 07:14:39] root [Individual 0] Begin training for 128 episodes
+[INFO 07:14:42] root t_env: 6400 / 5000000
+[INFO 07:14:42] root Estimated time left: 15 minutes, 27 seconds. Time passed: 3 seconds
+[INFO 07:14:49] root t_env: 19200 / 5000000
+[INFO 07:14:49] root Estimated time left: 47 minutes, 13 seconds. Time passed: 10 seconds
+[INFO 07:14:54] root [Individual 1] Begin training for 128 episodes
+[INFO 07:14:56] root t_env: 6400 / 5000000
+[INFO 07:14:56] root Estimated time left: 10 minutes, 57 seconds. Time passed: 2 seconds
+[INFO 07:15:03] root t_env: 19200 / 5000000
+[INFO 07:15:03] root Estimated time left: 49 minutes, 3 seconds. Time passed: 9 seconds
+[INFO 07:15:09] root [Individual 2] Begin training for 128 episodes
+[INFO 07:15:11] root t_env: 6400 / 5000000
+[INFO 07:15:11] root Estimated time left: 13 minutes, 31 seconds. Time passed: 2 seconds
+[INFO 07:15:19] root t_env: 19200 / 5000000
+[INFO 07:15:19] root Estimated time left: 50 minutes, 6 seconds. Time passed: 10 seconds
+[INFO 07:15:24] root [Individual 3] Begin training for 128 episodes
+[INFO 07:15:27] root t_env: 6400 / 5000000
+[INFO 07:15:27] root Estimated time left: 13 minutes, 58 seconds. Time passed: 2 seconds
+[INFO 07:15:35] root t_env: 19200 / 5000000
+[INFO 07:15:35] root Estimated time left: 51 minutes, 39 seconds. Time passed: 10 seconds
+[INFO 07:15:40] my_main [Population] Meta Train for 8 updates
+[INFO 07:16:09] root Saving models to results/stage1_PP__2024-10-21_07-14-35_J1Xxgo/models/0/25600
+[INFO 07:16:09] root Saving models to results/stage1_PP__2024-10-21_07-14-35_J1Xxgo/models/1/25600
+[INFO 07:16:09] root Saving models to results/stage1_PP__2024-10-21_07-14-35_J1Xxgo/models/2/25600
+[INFO 07:16:09] root Saving models to results/stage1_PP__2024-10-21_07-14-35_J1Xxgo/models/3/25600
+[INFO 07:16:09] my_main ================ MetaEpoch: 1 ================
+[INFO 07:16:09] my_main Time passed: 1 minutes, 30 seconds
+[INFO 07:16:09] root [Individual 0] Begin training for 128 episodes
+[INFO 07:16:12] root t_env: 32000 / 5000000
+[INFO 07:16:12] root Estimated time left: 8 hours, 55 minutes, 19 seconds. Time passed: 1 minutes, 33 seconds
+[INFO 07:16:20] root t_env: 44800 / 5000000
+[INFO 07:16:20] root Estimated time left: 52 minutes, 5 seconds. Time passed: 1 minutes, 41 seconds
+[INFO 07:16:25] root [Individual 1] Begin training for 128 episodes
+[INFO 07:16:28] root t_env: 32000 / 5000000
+[INFO 07:16:28] root Estimated time left: 9 hours, 7 minutes, 41 seconds. Time passed: 1 minutes, 34 seconds
+[INFO 07:16:36] root t_env: 44800 / 5000000
+[INFO 07:16:36] root Estimated time left: 52 minutes, 7 seconds. Time passed: 1 minutes, 42 seconds
+[INFO 07:16:41] root [Individual 2] Begin training for 128 episodes
+[INFO 07:16:44] root t_env: 32000 / 5000000
+[INFO 07:16:44] root Estimated time left: 9 hours, 11 minutes, 6 seconds. Time passed: 1 minutes, 35 seconds
+[INFO 07:16:52] root t_env: 44800 / 5000000
+[INFO 07:16:52] root Estimated time left: 52 minutes, 4 seconds. Time passed: 1 minutes, 43 seconds
+[INFO 07:16:58] root [Individual 3] Begin training for 128 episodes
+[INFO 07:17:00] root t_env: 32000 / 5000000
+[INFO 07:17:00] root Estimated time left: 9 hours, 11 minutes, 54 seconds. Time passed: 1 minutes, 36 seconds
+[INFO 07:17:08] root t_env: 44800 / 5000000
+[INFO 07:17:08] root Estimated time left: 51 minutes, 37 seconds. Time passed: 1 minutes, 44 seconds
+[INFO 07:17:14] my_main [Population] Meta Train for 8 updates
+[INFO 07:17:42] my_main ================ MetaEpoch: 2 ================
+[INFO 07:17:42] my_main Time passed: 3 minutes, 2 seconds
+[INFO 07:17:42] root [Individual 0] Begin training for 128 episodes
+[INFO 07:17:44] root t_env: 57600 / 5000000
+[INFO 07:17:44] root Estimated time left: 9 hours, 3 minutes, 26 seconds. Time passed: 3 minutes, 5 seconds
+[INFO 07:17:52] root t_env: 70400 / 5000000
+[INFO 07:17:52] root Estimated time left: 51 minutes, 36 seconds. Time passed: 3 minutes, 13 seconds
+[INFO 07:17:58] root [Individual 1] Begin training for 128 episodes
+[INFO 07:18:01] root t_env: 57600 / 5000000
+[INFO 07:18:01] root Estimated time left: 9 hours, 3 minutes, 30 seconds. Time passed: 3 minutes, 6 seconds
+[INFO 07:18:09] root t_env: 70400 / 5000000
+[INFO 07:18:09] root Estimated time left: 52 minutes, 4 seconds. Time passed: 3 minutes, 15 seconds
+[INFO 07:18:14] root [Individual 2] Begin training for 128 episodes
+[INFO 07:18:17] root t_env: 57600 / 5000000
+[INFO 07:18:17] root Estimated time left: 9 hours, 5 minutes, 33 seconds. Time passed: 3 minutes, 8 seconds
+[INFO 07:18:25] root t_env: 70400 / 5000000
+[INFO 07:18:25] root Estimated time left: 54 minutes, 42 seconds. Time passed: 3 minutes, 16 seconds
+[INFO 07:18:31] root [Individual 3] Begin training for 128 episodes
+[INFO 07:18:34] root t_env: 57600 / 5000000
+[INFO 07:18:34] root Estimated time left: 9 hours, 10 minutes, 31 seconds. Time passed: 3 minutes, 9 seconds
+[INFO 07:18:42] root t_env: 70400 / 5000000
+[INFO 07:18:42] root Estimated time left: 52 minutes, 52 seconds. Time passed: 3 minutes, 17 seconds
+[INFO 07:18:48] my_main [Population] Meta Train for 8 updates
+[INFO 07:19:16] my_main ================ MetaEpoch: 3 ================
+[INFO 07:19:16] my_main Time passed: 4 minutes, 36 seconds
+[INFO 07:19:16] root [Individual 0] Begin training for 128 episodes
+[INFO 07:19:18] root t_env: 83200 / 5000000
+[INFO 07:19:18] root Estimated time left: 9 hours, 10 minutes, 45 seconds. Time passed: 4 minutes, 39 seconds
+[INFO 07:19:27] root t_env: 96000 / 5000000
+[INFO 07:19:27] root Estimated time left: 54 minutes, 49 seconds. Time passed: 4 minutes, 48 seconds
+[INFO 07:19:33] root [Individual 1] Begin training for 128 episodes
+[INFO 07:19:36] root t_env: 83200 / 5000000
+[INFO 07:19:36] root Estimated time left: 9 hours, 16 minutes, 14 seconds. Time passed: 4 minutes, 41 seconds
+[INFO 07:19:44] root t_env: 96000 / 5000000
+[INFO 07:19:44] root Estimated time left: 53 minutes, 56 seconds. Time passed: 4 minutes, 50 seconds
+[INFO 07:19:50] root [Individual 2] Begin training for 128 episodes
+[INFO 07:19:52] root t_env: 83200 / 5000000
+[INFO 07:19:52] root Estimated time left: 9 hours, 16 minutes, 40 seconds. Time passed: 4 minutes, 43 seconds
+[INFO 07:20:01] root t_env: 96000 / 5000000
+[INFO 07:20:01] root Estimated time left: 53 minutes, 35 seconds. Time passed: 4 minutes, 52 seconds
+[INFO 07:20:06] root [Individual 3] Begin training for 128 episodes
+[INFO 07:20:09] root t_env: 83200 / 5000000
+[INFO 07:20:09] root Estimated time left: 9 hours, 17 minutes, 47 seconds. Time passed: 4 minutes, 44 seconds
+[INFO 07:20:17] root t_env: 96000 / 5000000
+[INFO 07:20:17] root Estimated time left: 52 minutes, 26 seconds. Time passed: 4 minutes, 53 seconds
+[INFO 07:20:23] my_main [Population] Meta Train for 8 updates
+[INFO 07:20:51] my_main ================ MetaEpoch: 4 ================
+[INFO 07:20:51] my_main Time passed: 6 minutes, 12 seconds
+[INFO 07:20:51] root [Individual 0] Begin training for 128 episodes
+[INFO 07:20:54] root t_env: 108800 / 5000000
+[INFO 07:20:54] root Estimated time left: 9 hours, 12 minutes, 47 seconds. Time passed: 6 minutes, 15 seconds
+[INFO 07:21:02] root t_env: 121600 / 5000000
+[INFO 07:21:02] root Estimated time left: 54 minutes, 13 seconds. Time passed: 6 minutes, 23 seconds
+[INFO 07:21:08] root [Individual 1] Begin training for 128 episodes
+[INFO 07:21:11] root t_env: 108800 / 5000000
+[INFO 07:21:11] root Estimated time left: 9 hours, 13 minutes, 48 seconds. Time passed: 6 minutes, 17 seconds
+[INFO 07:21:19] root t_env: 121600 / 5000000
+[INFO 07:21:19] root Estimated time left: 53 minutes, 38 seconds. Time passed: 6 minutes, 25 seconds
+[INFO 07:21:25] root [Individual 2] Begin training for 128 episodes
+[INFO 07:21:28] root t_env: 108800 / 5000000
+[INFO 07:21:28] root Estimated time left: 9 hours, 12 minutes, 3 seconds. Time passed: 6 minutes, 18 seconds
+[INFO 07:21:35] root t_env: 121600 / 5000000
+[INFO 07:21:35] root Estimated time left: 50 minutes, 16 seconds. Time passed: 6 minutes, 26 seconds
+[INFO 07:21:41] root [Individual 3] Begin training for 128 episodes
+[INFO 07:21:44] root t_env: 108800 / 5000000
+[INFO 07:21:44] root Estimated time left: 9 hours, 8 minutes, 7 seconds. Time passed: 6 minutes, 19 seconds
+[INFO 07:21:52] root t_env: 121600 / 5000000
+[INFO 07:21:52] root Estimated time left: 52 minutes, 59 seconds. Time passed: 6 minutes, 27 seconds
+[INFO 07:21:57] my_main [Population] Meta Train for 8 updates
+[INFO 07:22:26] my_main ================ MetaEpoch: 5 ================
+[INFO 07:22:26] my_main Time passed: 7 minutes, 47 seconds
+[INFO 07:22:26] root [Individual 0] Begin training for 128 episodes
+[INFO 07:22:36] root t_env: 134400 / 5000000
+[INFO 07:22:36] root Estimated time left: 9 hours, 54 minutes, 19 seconds. Time passed: 7 minutes, 57 seconds
+[INFO 07:22:45] root t_env: 147200 / 5000000
+[INFO 07:22:45] root Estimated time left: 53 minutes, 1 seconds. Time passed: 8 minutes, 5 seconds
+[INFO 07:22:50] root [Individual 1] Begin training for 128 episodes
+[INFO 07:22:53] root t_env: 134400 / 5000000
+[INFO 07:22:53] root Estimated time left: 9 hours, 50 minutes, 28 seconds. Time passed: 7 minutes, 58 seconds
+[INFO 07:23:01] root t_env: 147200 / 5000000
+[INFO 07:23:01] root Estimated time left: 51 minutes, 19 seconds. Time passed: 8 minutes, 7 seconds
+[INFO 07:23:06] root [Individual 2] Begin training for 128 episodes
+[INFO 07:23:09] root t_env: 134400 / 5000000
+[INFO 07:23:09] root Estimated time left: 9 hours, 52 minutes, 39 seconds. Time passed: 8 minutes, 0 seconds
+[INFO 07:23:17] root t_env: 147200 / 5000000
+[INFO 07:23:17] root Estimated time left: 51 minutes, 58 seconds. Time passed: 8 minutes, 8 seconds
+[INFO 07:23:23] root [Individual 3] Begin training for 128 episodes
+[INFO 07:23:25] root t_env: 134400 / 5000000
+[INFO 07:23:25] root Estimated time left: 9 hours, 52 minutes, 31 seconds. Time passed: 8 minutes, 1 seconds
+[INFO 07:23:34] root t_env: 147200 / 5000000
+[INFO 07:23:34] root Estimated time left: 51 minutes, 21 seconds. Time passed: 8 minutes, 9 seconds
+[INFO 07:23:39] my_main [Population] Meta Train for 8 updates
+[INFO 07:24:08] my_main ================ MetaEpoch: 6 ================
+[INFO 07:24:08] my_main Time passed: 9 minutes, 28 seconds
+[INFO 07:24:08] root [Individual 0] Begin training for 128 episodes
+[INFO 07:24:12] root t_env: 160000 / 5000000
+[INFO 07:24:12] root Estimated time left: 9 hours, 10 minutes, 44 seconds. Time passed: 9 minutes, 33 seconds
+[INFO 07:24:45] root t_env: 172800 / 5000000
+[INFO 07:24:45] root Estimated time left: 3 hours, 29 minutes, 33 seconds. Time passed: 10 minutes, 6 seconds
+[INFO 07:25:09] root [Individual 1] Begin training for 128 episodes
+[INFO 07:25:21] root t_env: 160000 / 5000000
+[INFO 07:25:21] root Estimated time left: 14 hours, 43 minutes, 0 seconds. Time passed: 10 minutes, 27 seconds
+[INFO 07:25:56] root t_env: 172800 / 5000000
+[INFO 07:25:56] root Estimated time left: 3 hours, 43 minutes, 26 seconds. Time passed: 11 minutes, 2 seconds
+[INFO 07:26:20] root [Individual 2] Begin training for 128 episodes
+[INFO 07:26:32] root t_env: 160000 / 5000000
+[INFO 07:26:32] root Estimated time left: 20 hours, 26 minutes, 22 seconds. Time passed: 11 minutes, 23 seconds
+[INFO 07:27:07] root t_env: 172800 / 5000000
+[INFO 07:27:07] root Estimated time left: 3 hours, 43 minutes, 29 seconds. Time passed: 11 minutes, 58 seconds
+[INFO 07:27:31] root [Individual 3] Begin training for 128 episodes
+[INFO 07:27:43] root t_env: 160000 / 5000000
+[INFO 07:27:43] root Estimated time left: 1 days, 2 hours, 12 minutes, 31 seconds. Time passed: 12 minutes, 18 seconds
+[INFO 07:28:19] root t_env: 172800 / 5000000
+[INFO 07:28:19] root Estimated time left: 3 hours, 43 minutes, 14 seconds. Time passed: 12 minutes, 54 seconds
+[INFO 07:28:43] my_main [Population] Meta Train for 8 updates
+[INFO 07:29:14] my_main ================ MetaEpoch: 7 ================
+[INFO 07:29:14] my_main Time passed: 14 minutes, 34 seconds
+[INFO 07:29:14] root [Individual 0] Begin training for 128 episodes
+[INFO 07:29:26] root t_env: 185600 / 5000000
+[INFO 07:29:26] root Estimated time left: 1 days, 5 hours, 19 minutes, 40 seconds. Time passed: 14 minutes, 47 seconds
+[INFO 07:30:03] root t_env: 198400 / 5000000
+[INFO 07:30:03] root Estimated time left: 3 hours, 49 minutes, 36 seconds. Time passed: 15 minutes, 23 seconds
+[INFO 07:30:28] root Updated target network
+[INFO 07:30:40] root [Individual 1] Begin training for 128 episodes
+[INFO 07:30:52] root t_env: 185600 / 5000000
+[INFO 07:30:52] root Estimated time left: 1 days, 6 hours, 54 minutes, 33 seconds. Time passed: 15 minutes, 58 seconds
+[INFO 07:31:29] root t_env: 198400 / 5000000
+[INFO 07:31:29] root Estimated time left: 3 hours, 49 minutes, 45 seconds. Time passed: 16 minutes, 35 seconds
+[INFO 07:31:54] root Updated target network
+[INFO 07:32:05] root [Individual 2] Begin training for 128 episodes
+[INFO 07:32:17] root t_env: 185600 / 5000000
+[INFO 07:32:17] root Estimated time left: 1 days, 8 hours, 22 minutes, 45 seconds. Time passed: 17 minutes, 8 seconds
+[INFO 07:32:54] root t_env: 198400 / 5000000
+[INFO 07:32:54] root Estimated time left: 3 hours, 49 minutes, 43 seconds. Time passed: 17 minutes, 45 seconds

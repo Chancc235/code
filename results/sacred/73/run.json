@@ -1,0 +1,122 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/home/cike/code/src",
+    "dependencies": [
+      "munch==2.5.0",
+      "numpy==1.21.6",
+      "PyYAML==5.4.1",
+      "sacred==0.8.2",
+      "torch==1.10.2"
+    ],
+    "mainfile": "meta_main.py",
+    "name": "pymarl",
+    "repositories": [],
+    "sources": [
+      [
+        "meta_main.py",
+        "_sources/meta_main_a74be827ec41963b97b9ab4d77c6d25a.py"
+      ],
+      [
+        "utils/config_utils.py",
+        "_sources/config_utils_11a418cc99d65a52a4ab3d9c9e93f913.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_867f86b10403f8b7e6826558d04fb18e.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"src/meta_main.py\", line 43, in my_main\n    run(_run, config, _log)\n",
+    "  File \"src/meta_main.py\", line 80, in run\n    pop.run()\n",
+    "  File \"/home/cike/code/src/meta/population/collector_population.py\", line 53, in run\n    done = self.BRI.collect_trajectories()  # Changed to collect trajectories\n",
+    "  File \"/home/cike/code/src/meta/individual/collector_individual.py\", line 99, in collect_trajectories\n    episode_batch = self.runner.run(test_mode=False, status_recorder=self.status)\n",
+    "  File \"/home/cike/code/src/runners/meta_runner.py\", line 232, in run\n    bs=envs_not_terminated, test_mode=test_mode,\n",
+    "  File \"/home/cike/code/src/meta/individual/collector_individual.py\", line 159, in select_actions\n    selected_batch, t_ep, t_env, bs, test_mode=true_test_mode, global_batch=ep_batch, **kwargs\n",
+    "  File \"/home/cike/code/src/controllers/basic_controller.py\", line 23, in select_actions\n    output_dict = self.forward(ep_batch, t_ep, test_mode=test_mode, **kwargs)\n",
+    "  File \"/home/cike/code/src/controllers/basic_controller.py\", line 34, in forward\n    **kwargs)\n",
+    "  File \"/home/cike/code/src/modules/agents/rnn_agent.py\", line 22, in forward\n    x = F.relu(self.fc1(obs))\n",
+    "  File \"/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/torch/nn/modules/module.py\", line 1102, in _call_impl\n    return forward_call(*input, **kwargs)\n",
+    "  File \"/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/torch/nn/modules/linear.py\", line 103, in forward\n    return F.linear(input, self.weight, self.bias)\n",
+    "  File \"/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/torch/nn/functional.py\", line 1848, in linear\n    return torch._C._nn.linear(input, weight, bias)\n",
+    "RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument mat1 in method wrapper_addmm)\n"
+  ],
+  "heartbeat": "2024-10-22T07:54:12.448645",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz",
+    "gpus": {
+      "driver_version": "470.182.03",
+      "gpus": [
+        {
+          "model": "Quadro RTX 8000",
+          "persistence_mode": false,
+          "total_memory": 48601
+        },
+        {
+          "model": "Tesla P100-PCIE-16GB",
+          "persistence_mode": false,
+          "total_memory": 16280
+        },
+        {
+          "model": "Tesla P100-PCIE-16GB",
+          "persistence_mode": false,
+          "total_memory": 16280
+        },
+        {
+          "model": "Tesla P100-PCIE-16GB",
+          "persistence_mode": false,
+          "total_memory": 16280
+        },
+        {
+          "model": "Tesla P100-PCIE-16GB",
+          "persistence_mode": false,
+          "total_memory": 16280
+        }
+      ]
+    },
+    "hostname": "89ddac7113b8",
+    "os": [
+      "Linux",
+      "Linux-4.15.0-213-generic-x86_64-with-debian-buster-sid"
+    ],
+    "python_version": "3.7.12"
+  },
+  "meta": {
+    "command": "my_main",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2024-10-22T07:54:07.784783",
+  "status": "FAILED",
+  "stop_time": "2024-10-22T07:54:12.454866"
+}

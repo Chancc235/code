@@ -1,0 +1,647 @@
+[INFO 01:23:14] pymarl Running command 'my_main'
+[INFO 01:23:14] pymarl Started run with ID "43"
+[DEBUG 01:23:14] pymarl Starting Heartbeat
+[DEBUG 01:23:14] my_main Started
+[INFO 01:23:14] my_main Experiment Parameters:
+[INFO 01:23:14] my_main 
+
+{   'agent': 'rnn',
+    'alg2agent': {   'controllable': [   0],
+                     'teammate': [   1]},
+    'batch_size': 1024,
+    'batch_size_run': 32,
+    'buffer_cpu_only': True,
+    'buffer_size': 32,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'cur_episodes': 32,
+    'env': 'stag_hunt',
+    'env_args': {   'agent_move_block': [   0,
+                                            1,
+                                            2],
+                    'agent_obs': [   2,
+                                     2],
+                    'capture_action': False,
+                    'capture_action_conditions': [   2,
+                                                     1],
+                    'capture_conditions': [   0,
+                                              1],
+                    'capture_freezes': False,
+                    'capture_terminal': False,
+                    'directed_cone_narrow': True,
+                    'directed_exta_actions': True,
+                    'directed_observations': False,
+                    'episode_limit': 200,
+                    'intersection_global_view': False,
+                    'intersection_unknown': False,
+                    'is_print': False,
+                    'miscapture_punishment': 0,
+                    'mountain_agent_row': -1,
+                    'mountain_slope': 0.0,
+                    'mountain_spawn': False,
+                    'n_agents': 2,
+                    'n_hare': 0,
+                    'n_stags': 4,
+                    'need_render': False,
+                    'observe_ids': False,
+                    'observe_one_hot': False,
+                    'observe_state': False,
+                    'observe_walls': False,
+                    'p_hare_rest': 0.0,
+                    'p_stags_rest': 0.0,
+                    'prevent_cannibalism': True,
+                    'print_caught_prey': False,
+                    'print_frozen_agents': False,
+                    'random_ghosts': False,
+                    'random_ghosts_indicator': False,
+                    'random_ghosts_mul': -1,
+                    'random_ghosts_prob': 0.5,
+                    'remove_frozen': True,
+                    'reward_collision': 0,
+                    'reward_hare': 1,
+                    'reward_stag': 10,
+                    'reward_time': 0,
+                    'state_as_graph': False,
+                    'toroidal': False,
+                    'world_shape': [   10,
+                                       10]},
+    'episodes_per_teammate': 64,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'exp_name': 'stage2_PP',
+    'explore_alg': 'stage2_PP',
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'ind': 'stage2',
+    'inner_loop_episodes': 128,
+    'label': 'default_label',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'local_saves_path': 'saves',
+    'log_interval': 10000,
+    'lr': 0.0005,
+    'mac': 'basic',
+    'meta_update_times': 8,
+    'n_sub_modules': 4,
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimize_meta': True,
+    'points_per_teammate': 64,
+    'pop': 'stage2',
+    'population_alg': 'qmix',
+    'population_directories': 'stage2_PP__2024-10-22_01-05-04_Exo0Pw',
+    'population_size': 5,
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'meta',
+    'runner_log_interval': 10000,
+    'save_BR': True,
+    'save_BR_episodes': 8192,
+    'save_model': False,
+    'save_model_interval': 2000000,
+    'save_population': False,
+    'save_population_episodes': 2048,
+    'save_replay': False,
+    'seed': 926900702,
+    't_max': 1000000,
+    'teammate_alg': 'vdn',
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 32,
+    'test_percent': 0.2,
+    'train_test_split': False,
+    'use_cuda': True,
+    'use_history': False,
+    'use_tensorboard': True,
+    'z_dim': 8}
+
+[INFO 01:23:17] my_main ================ MetaEpoch: 0 ================
+[INFO 01:23:17] my_main Time passed: 0 seconds
+[INFO 01:23:17] my_main Status:[0, 0, 0, 0]
+[INFO 01:23:17] my_main Choose:0  0
+[INFO 01:23:20] root t_env: 6400 / 1000000
+[INFO 01:23:20] root Estimated time left: 3 minutes, 32 seconds. Time passed: 3 seconds
+[INFO 01:23:40] root Saving models to results/stage2_PP__2024-10-22_01-23-14_jBxs8i/models/12800
+[INFO 01:23:40] my_main ================ MetaEpoch: 1 ================
+[INFO 01:23:40] my_main Time passed: 22 seconds
+[INFO 01:23:40] my_main Status:[0.78125, 0, 0, 0]
+[INFO 01:23:40] my_main Choose:1  1
+[INFO 01:23:43] root t_env: 19200 / 1000000
+[INFO 01:23:43] root Estimated time left: 29 minutes, 19 seconds. Time passed: 26 seconds
+[INFO 01:24:02] my_main ================ MetaEpoch: 2 ================
+[INFO 01:24:02] my_main Time passed: 45 seconds
+[INFO 01:24:02] my_main Status:[0.78125, 0.46875, 0, 0]
+[INFO 01:24:02] my_main Choose:2  2
+[INFO 01:24:06] root t_env: 32000 / 1000000
+[INFO 01:24:06] root Estimated time left: 28 minutes, 45 seconds. Time passed: 49 seconds
+[INFO 01:24:25] my_main ================ MetaEpoch: 3 ================
+[INFO 01:24:25] my_main Time passed: 1 minutes, 8 seconds
+[INFO 01:24:25] my_main Status:[0.78125, 0.46875, 1.5625, 0]
+[INFO 01:24:25] my_main Choose:3  3
+[INFO 01:24:29] root t_env: 44800 / 1000000
+[INFO 01:24:29] root Estimated time left: 27 minutes, 59 seconds. Time passed: 1 minutes, 11 seconds
+[INFO 01:24:48] my_main ================ MetaEpoch: 4 ================
+[INFO 01:24:48] my_main Time passed: 1 minutes, 30 seconds
+[INFO 01:24:48] my_main Status:[0.78125, 0.46875, 1.5625, 0.625]
+[INFO 01:24:48] my_main Choose:0  0
+[INFO 01:24:52] root t_env: 57600 / 1000000
+[INFO 01:24:52] root Estimated time left: 27 minutes, 55 seconds. Time passed: 1 minutes, 34 seconds
+[INFO 01:25:10] my_main ================ MetaEpoch: 5 ================
+[INFO 01:25:10] my_main Time passed: 1 minutes, 53 seconds
+[INFO 01:25:10] my_main Status:[0.3125, 0.46875, 1.5625, 0.625]
+[INFO 01:25:10] my_main Choose:1  1
+[INFO 01:25:14] root t_env: 70400 / 1000000
+[INFO 01:25:14] root Estimated time left: 27 minutes, 17 seconds. Time passed: 1 minutes, 57 seconds
+[INFO 01:25:33] my_main ================ MetaEpoch: 6 ================
+[INFO 01:25:33] my_main Time passed: 2 minutes, 16 seconds
+[INFO 01:25:33] my_main Status:[0.3125, 1.09375, 1.5625, 0.625]
+[INFO 01:25:33] my_main Choose:2  2
+[INFO 01:25:37] root t_env: 83200 / 1000000
+[INFO 01:25:37] root Estimated time left: 27 minutes, 11 seconds. Time passed: 2 minutes, 19 seconds
+[INFO 01:25:56] my_main ================ MetaEpoch: 7 ================
+[INFO 01:25:56] my_main Time passed: 2 minutes, 38 seconds
+[INFO 01:25:56] my_main Status:[0.3125, 1.09375, 0.625, 0.625]
+[INFO 01:25:56] my_main Choose:3  3
+[INFO 01:25:59] root t_env: 96000 / 1000000
+[INFO 01:25:59] root Estimated time left: 26 minutes, 21 seconds. Time passed: 2 minutes, 42 seconds
+[INFO 01:26:18] my_main ================ MetaEpoch: 8 ================
+[INFO 01:26:18] my_main Time passed: 3 minutes, 1 seconds
+[INFO 01:26:18] my_main Status:[0.3125, 1.09375, 0.625, 1.09375]
+[INFO 01:26:18] my_main Choose:0  0
+[INFO 01:26:22] root t_env: 108800 / 1000000
+[INFO 01:26:22] root Estimated time left: 25 minutes, 59 seconds. Time passed: 3 minutes, 4 seconds
+[INFO 01:26:40] my_main ================ MetaEpoch: 9 ================
+[INFO 01:26:40] my_main Time passed: 3 minutes, 23 seconds
+[INFO 01:26:40] my_main Status:[0.15625, 1.09375, 0.625, 1.09375]
+[INFO 01:26:40] my_main Choose:1  1
+[INFO 01:26:44] root t_env: 121600 / 1000000
+[INFO 01:26:44] root Estimated time left: 25 minutes, 36 seconds. Time passed: 3 minutes, 27 seconds
+[INFO 01:27:03] my_main ================ MetaEpoch: 10 ================
+[INFO 01:27:03] my_main Time passed: 3 minutes, 45 seconds
+[INFO 01:27:03] my_main Status:[0.15625, 1.40625, 0.625, 1.09375]
+[INFO 01:27:03] my_main Choose:2  2
+[INFO 01:27:07] root t_env: 134400 / 1000000
+[INFO 01:27:07] root Estimated time left: 25 minutes, 27 seconds. Time passed: 3 minutes, 49 seconds
+[INFO 01:27:26] my_main ================ MetaEpoch: 11 ================
+[INFO 01:27:26] my_main Time passed: 4 minutes, 8 seconds
+[INFO 01:27:26] my_main Status:[0.15625, 1.40625, 0.9375, 1.09375]
+[INFO 01:27:26] my_main Choose:3  3
+[INFO 01:27:29] root t_env: 147200 / 1000000
+[INFO 01:27:29] root Estimated time left: 25 minutes, 18 seconds. Time passed: 4 minutes, 12 seconds
+[INFO 01:27:48] my_main ================ MetaEpoch: 12 ================
+[INFO 01:27:48] my_main Time passed: 4 minutes, 31 seconds
+[INFO 01:27:48] my_main Status:[0.15625, 1.40625, 0.9375, 1.09375]
+[INFO 01:27:48] my_main Choose:0  0
+[INFO 01:27:52] root t_env: 160000 / 1000000
+[INFO 01:27:52] root Estimated time left: 24 minutes, 49 seconds. Time passed: 4 minutes, 35 seconds
+[INFO 01:28:10] my_main ================ MetaEpoch: 13 ================
+[INFO 01:28:10] my_main Time passed: 4 minutes, 53 seconds
+[INFO 01:28:10] my_main Status:[0.0, 1.40625, 0.9375, 1.09375]
+[INFO 01:28:10] my_main Choose:1  1
+[INFO 01:28:14] root t_env: 172800 / 1000000
+[INFO 01:28:14] root Estimated time left: 23 minutes, 38 seconds. Time passed: 4 minutes, 57 seconds
+[INFO 01:28:33] my_main ================ MetaEpoch: 14 ================
+[INFO 01:28:33] my_main Time passed: 5 minutes, 15 seconds
+[INFO 01:28:33] my_main Status:[0.0, 0.9375, 0.9375, 1.09375]
+[INFO 01:28:33] my_main Choose:2  2
+[INFO 01:28:36] root t_env: 185600 / 1000000
+[INFO 01:28:36] root Estimated time left: 23 minutes, 29 seconds. Time passed: 5 minutes, 19 seconds
+[INFO 01:28:55] my_main ================ MetaEpoch: 15 ================
+[INFO 01:28:55] my_main Time passed: 5 minutes, 37 seconds
+[INFO 01:28:55] my_main Status:[0.0, 0.9375, 0.46875, 1.09375]
+[INFO 01:28:55] my_main Choose:3  3
+[INFO 01:28:58] root t_env: 198400 / 1000000
+[INFO 01:28:58] root Estimated time left: 23 minutes, 8 seconds. Time passed: 5 minutes, 41 seconds
+[INFO 01:29:17] root Updated target network
+[INFO 01:29:36] my_main ================ MetaEpoch: 16 ================
+[INFO 01:29:36] my_main Time passed: 6 minutes, 18 seconds
+[INFO 01:29:36] my_main Status:[0.0, 0.9375, 0.46875, 0.625]
+[INFO 01:29:36] my_main Choose:0  0
+[INFO 01:29:57] root t_env: 211200 / 1000000
+[INFO 01:29:57] root Estimated time left: 59 minutes, 55 seconds. Time passed: 6 minutes, 39 seconds
+[INFO 01:30:32] my_main ================ MetaEpoch: 17 ================
+[INFO 01:30:32] my_main Time passed: 7 minutes, 15 seconds
+[INFO 01:30:32] my_main Status:[0.78125, 0.9375, 0.46875, 0.625]
+[INFO 01:30:32] my_main Choose:1  1
+[INFO 01:30:53] root t_env: 224000 / 1000000
+[INFO 01:30:53] root Estimated time left: 56 minutes, 44 seconds. Time passed: 7 minutes, 35 seconds
+[INFO 01:31:28] my_main ================ MetaEpoch: 18 ================
+[INFO 01:31:28] my_main Time passed: 8 minutes, 10 seconds
+[INFO 01:31:28] my_main Status:[0.78125, 1.40625, 0.46875, 0.625]
+[INFO 01:31:28] my_main Choose:2  2
+[INFO 01:31:49] root t_env: 236800 / 1000000
+[INFO 01:31:49] root Estimated time left: 55 minutes, 48 seconds. Time passed: 8 minutes, 32 seconds
+[INFO 01:32:24] my_main ================ MetaEpoch: 19 ================
+[INFO 01:32:24] my_main Time passed: 9 minutes, 6 seconds
+[INFO 01:32:24] my_main Status:[0.78125, 1.40625, 0.625, 0.625]
+[INFO 01:32:24] my_main Choose:3  3
+[INFO 01:32:28] root Updated target network
+[INFO 01:32:45] root t_env: 249600 / 1000000
+[INFO 01:32:45] root Estimated time left: 54 minutes, 12 seconds. Time passed: 9 minutes, 27 seconds
+[INFO 01:33:18] my_main ================ MetaEpoch: 20 ================
+[INFO 01:33:18] my_main Time passed: 10 minutes, 1 seconds
+[INFO 01:33:18] my_main Status:[0.78125, 1.40625, 0.625, 1.875]
+[INFO 01:33:18] my_main Choose:0  0
+[INFO 01:33:39] root t_env: 262400 / 1000000
+[INFO 01:33:39] root Estimated time left: 52 minutes, 33 seconds. Time passed: 10 minutes, 22 seconds
+[INFO 01:34:13] my_main ================ MetaEpoch: 21 ================
+[INFO 01:34:13] my_main Time passed: 10 minutes, 56 seconds
+[INFO 01:34:13] my_main Status:[1.71875, 1.40625, 0.625, 1.875]
+[INFO 01:34:13] my_main Choose:1  1
+[INFO 01:34:34] root t_env: 275200 / 1000000
+[INFO 01:34:34] root Estimated time left: 51 minutes, 48 seconds. Time passed: 11 minutes, 17 seconds
+[INFO 01:35:08] my_main ================ MetaEpoch: 22 ================
+[INFO 01:35:08] my_main Time passed: 11 minutes, 51 seconds
+[INFO 01:35:08] my_main Status:[1.71875, 2.5, 0.625, 1.875]
+[INFO 01:35:08] my_main Choose:2  2
+[INFO 01:35:29] root t_env: 288000 / 1000000
+[INFO 01:35:29] root Estimated time left: 50 minutes, 58 seconds. Time passed: 12 minutes, 12 seconds
+[INFO 01:35:47] root Updated target network
+[INFO 01:36:03] my_main ================ MetaEpoch: 23 ================
+[INFO 01:36:03] my_main Time passed: 12 minutes, 46 seconds
+[INFO 01:36:03] my_main Status:[1.71875, 2.5, 3.75, 1.875]
+[INFO 01:36:03] my_main Choose:3  3
+[INFO 01:36:25] root t_env: 300739 / 1000000
+[INFO 01:36:25] root Estimated time left: 50 minutes, 48 seconds. Time passed: 13 minutes, 7 seconds
+[INFO 01:37:00] my_main ================ MetaEpoch: 24 ================
+[INFO 01:37:00] my_main Time passed: 13 minutes, 42 seconds
+[INFO 01:37:00] my_main Status:[1.71875, 2.5, 3.75, 11.71875]
+[INFO 01:37:00] my_main Choose:0  0
+[INFO 01:37:20] root t_env: 313403 / 1000000
+[INFO 01:37:20] root Estimated time left: 50 minutes, 18 seconds. Time passed: 14 minutes, 3 seconds
+[INFO 01:37:54] my_main ================ MetaEpoch: 25 ================
+[INFO 01:37:54] my_main Time passed: 14 minutes, 37 seconds
+[INFO 01:37:54] my_main Status:[4.84375, 2.5, 3.75, 11.71875]
+[INFO 01:37:54] my_main Choose:1  1
+[INFO 01:38:15] root t_env: 326203 / 1000000
+[INFO 01:38:15] root Estimated time left: 48 minutes, 21 seconds. Time passed: 14 minutes, 58 seconds
+[INFO 01:38:50] my_main ================ MetaEpoch: 26 ================
+[INFO 01:38:50] my_main Time passed: 15 minutes, 32 seconds
+[INFO 01:38:50] my_main Status:[4.84375, 9.375, 3.75, 11.71875]
+[INFO 01:38:50] my_main Choose:2  2
+[INFO 01:38:54] root Updated target network
+[INFO 01:39:10] root t_env: 338939 / 1000000
+[INFO 01:39:10] root Estimated time left: 47 minutes, 30 seconds. Time passed: 15 minutes, 53 seconds
+[INFO 01:39:45] my_main ================ MetaEpoch: 27 ================
+[INFO 01:39:45] my_main Time passed: 16 minutes, 28 seconds
+[INFO 01:39:45] my_main Status:[4.84375, 9.375, 9.84375, 11.71875]
+[INFO 01:39:45] my_main Choose:3  3
+[INFO 01:40:06] root t_env: 351582 / 1000000
+[INFO 01:40:06] root Estimated time left: 47 minutes, 42 seconds. Time passed: 16 minutes, 49 seconds
+[INFO 01:40:41] my_main ================ MetaEpoch: 28 ================
+[INFO 01:40:41] my_main Time passed: 17 minutes, 23 seconds
+[INFO 01:40:41] my_main Status:[4.84375, 9.375, 9.84375, 20.3125]
+[INFO 01:40:41] my_main Choose:0  0
+[INFO 01:41:02] root t_env: 364277 / 1000000
+[INFO 01:41:02] root Estimated time left: 46 minutes, 14 seconds. Time passed: 17 minutes, 44 seconds
+[INFO 01:41:36] my_main ================ MetaEpoch: 29 ================
+[INFO 01:41:36] my_main Time passed: 18 minutes, 18 seconds
+[INFO 01:41:36] my_main Status:[9.21875, 9.375, 9.84375, 20.3125]
+[INFO 01:41:36] my_main Choose:1  1
+[INFO 01:41:56] root t_env: 376889 / 1000000
+[INFO 01:41:56] root Estimated time left: 45 minutes, 6 seconds. Time passed: 18 minutes, 39 seconds
+[INFO 01:42:15] root Updated target network
+[INFO 01:42:31] my_main ================ MetaEpoch: 30 ================
+[INFO 01:42:31] my_main Time passed: 19 minutes, 14 seconds
+[INFO 01:42:31] my_main Status:[9.21875, 14.0625, 9.84375, 20.3125]
+[INFO 01:42:31] my_main Choose:2  2
+[INFO 01:42:51] root t_env: 389593 / 1000000
+[INFO 01:42:51] root Estimated time left: 44 minutes, 3 seconds. Time passed: 19 minutes, 34 seconds
+[INFO 01:43:25] my_main ================ MetaEpoch: 31 ================
+[INFO 01:43:25] my_main Time passed: 20 minutes, 8 seconds
+[INFO 01:43:25] my_main Status:[9.21875, 14.0625, 12.96875, 20.3125]
+[INFO 01:43:25] my_main Choose:3  3
+[INFO 01:43:45] root t_env: 402063 / 1000000
+[INFO 01:43:45] root Estimated time left: 43 minutes, 12 seconds. Time passed: 20 minutes, 28 seconds
+[INFO 01:44:19] my_main ================ MetaEpoch: 32 ================
+[INFO 01:44:19] my_main Time passed: 21 minutes, 2 seconds
+[INFO 01:44:19] my_main Status:[9.21875, 14.0625, 12.96875, 22.96875]
+[INFO 01:44:19] my_main Choose:0  0
+[INFO 01:44:41] root t_env: 414734 / 1000000
+[INFO 01:44:41] root Estimated time left: 42 minutes, 46 seconds. Time passed: 21 minutes, 24 seconds
+[INFO 01:45:16] my_main ================ MetaEpoch: 33 ================
+[INFO 01:45:16] my_main Time passed: 21 minutes, 58 seconds
+[INFO 01:45:16] my_main Status:[13.4375, 14.0625, 12.96875, 22.96875]
+[INFO 01:45:16] my_main Choose:1  1
+[INFO 01:45:20] root Updated target network
+[INFO 01:45:36] root t_env: 427043 / 1000000
+[INFO 01:45:36] root Estimated time left: 42 minutes, 51 seconds. Time passed: 22 minutes, 19 seconds
+[INFO 01:46:11] my_main ================ MetaEpoch: 34 ================
+[INFO 01:46:11] my_main Time passed: 22 minutes, 53 seconds
+[INFO 01:46:11] my_main Status:[13.4375, 16.5625, 12.96875, 22.96875]
+[INFO 01:46:11] my_main Choose:2  2
+[INFO 01:46:32] root t_env: 439559 / 1000000
+[INFO 01:46:32] root Estimated time left: 41 minutes, 35 seconds. Time passed: 23 minutes, 15 seconds
+[INFO 01:47:06] my_main ================ MetaEpoch: 35 ================
+[INFO 01:47:06] my_main Time passed: 23 minutes, 49 seconds
+[INFO 01:47:06] my_main Status:[13.4375, 16.5625, 14.84375, 22.96875]
+[INFO 01:47:06] my_main Choose:3  3
+[INFO 01:47:27] root t_env: 451959 / 1000000
+[INFO 01:47:27] root Estimated time left: 40 minutes, 19 seconds. Time passed: 24 minutes, 9 seconds
+[INFO 01:48:01] my_main ================ MetaEpoch: 36 ================
+[INFO 01:48:01] my_main Time passed: 24 minutes, 43 seconds
+[INFO 01:48:01] my_main Status:[13.4375, 16.5625, 14.84375, 26.5625]
+[INFO 01:48:01] my_main Choose:0  0
+[INFO 01:48:22] root t_env: 464155 / 1000000
+[INFO 01:48:22] root Estimated time left: 40 minutes, 8 seconds. Time passed: 25 minutes, 4 seconds
+[INFO 01:48:39] root Updated target network
+[INFO 01:48:55] my_main ================ MetaEpoch: 37 ================
+[INFO 01:48:55] my_main Time passed: 25 minutes, 38 seconds
+[INFO 01:48:55] my_main Status:[12.5, 16.5625, 14.84375, 26.5625]
+[INFO 01:48:55] my_main Choose:1  1
+[INFO 01:49:16] root t_env: 476498 / 1000000
+[INFO 01:49:16] root Estimated time left: 38 minutes, 45 seconds. Time passed: 25 minutes, 59 seconds
+[INFO 01:49:50] my_main ================ MetaEpoch: 38 ================
+[INFO 01:49:50] my_main Time passed: 26 minutes, 33 seconds
+[INFO 01:49:50] my_main Status:[12.5, 24.375, 14.84375, 26.5625]
+[INFO 01:49:50] my_main Choose:2  2
+[INFO 01:50:10] root t_env: 488937 / 1000000
+[INFO 01:50:10] root Estimated time left: 36 minutes, 42 seconds. Time passed: 26 minutes, 53 seconds
+[INFO 01:50:44] my_main ================ MetaEpoch: 39 ================
+[INFO 01:50:44] my_main Time passed: 27 minutes, 27 seconds
+[INFO 01:50:44] my_main Status:[12.5, 24.375, 15.625, 26.5625]
+[INFO 01:50:44] my_main Choose:3  3
+[INFO 01:51:05] root t_env: 500934 / 1000000
+[INFO 01:51:05] root Estimated time left: 37 minutes, 59 seconds. Time passed: 27 minutes, 47 seconds
+[INFO 01:51:39] my_main ================ MetaEpoch: 40 ================
+[INFO 01:51:39] my_main Time passed: 28 minutes, 21 seconds
+[INFO 01:51:39] my_main Status:[12.5, 24.375, 15.625, 26.40625]
+[INFO 01:51:39] my_main Choose:0  0
+[INFO 01:51:43] root Updated target network
+[INFO 01:52:00] root t_env: 513183 / 1000000
+[INFO 01:52:00] root Estimated time left: 36 minutes, 27 seconds. Time passed: 28 minutes, 42 seconds
+[INFO 01:52:34] my_main ================ MetaEpoch: 41 ================
+[INFO 01:52:34] my_main Time passed: 29 minutes, 17 seconds
+[INFO 01:52:34] my_main Status:[15.625, 24.375, 15.625, 26.40625]
+[INFO 01:52:34] my_main Choose:1  1
+[INFO 01:52:55] root t_env: 525555 / 1000000
+[INFO 01:52:55] root Estimated time left: 35 minutes, 2 seconds. Time passed: 29 minutes, 37 seconds
+[INFO 01:53:29] my_main ================ MetaEpoch: 42 ================
+[INFO 01:53:29] my_main Time passed: 30 minutes, 11 seconds
+[INFO 01:53:29] my_main Status:[15.625, 25.78125, 15.625, 26.40625]
+[INFO 01:53:29] my_main Choose:2  2
+[INFO 01:53:49] root t_env: 537627 / 1000000
+[INFO 01:53:49] root Estimated time left: 34 minutes, 47 seconds. Time passed: 30 minutes, 32 seconds
+[INFO 01:54:22] my_main ================ MetaEpoch: 43 ================
+[INFO 01:54:22] my_main Time passed: 31 minutes, 5 seconds
+[INFO 01:54:22] my_main Status:[15.625, 25.78125, 14.84375, 26.40625]
+[INFO 01:54:22] my_main Choose:3  3
+[INFO 01:54:43] root t_env: 549538 / 1000000
+[INFO 01:54:43] root Estimated time left: 34 minutes, 4 seconds. Time passed: 31 minutes, 26 seconds
+[INFO 01:55:00] root Updated target network
+[INFO 01:55:16] my_main ================ MetaEpoch: 44 ================
+[INFO 01:55:16] my_main Time passed: 31 minutes, 59 seconds
+[INFO 01:55:16] my_main Status:[15.625, 25.78125, 14.84375, 30.625]
+[INFO 01:55:16] my_main Choose:0  0
+[INFO 01:55:37] root t_env: 561533 / 1000000
+[INFO 01:55:37] root Estimated time left: 32 minutes, 57 seconds. Time passed: 32 minutes, 20 seconds
+[INFO 01:56:11] my_main ================ MetaEpoch: 45 ================
+[INFO 01:56:11] my_main Time passed: 32 minutes, 54 seconds
+[INFO 01:56:11] my_main Status:[19.6875, 25.78125, 14.84375, 30.625]
+[INFO 01:56:11] my_main Choose:1  1
+[INFO 01:56:32] root t_env: 573238 / 1000000
+[INFO 01:56:32] root Estimated time left: 33 minutes, 29 seconds. Time passed: 33 minutes, 15 seconds
+[INFO 01:57:07] my_main ================ MetaEpoch: 46 ================
+[INFO 01:57:07] my_main Time passed: 33 minutes, 49 seconds
+[INFO 01:57:07] my_main Status:[19.6875, 24.0625, 14.84375, 30.625]
+[INFO 01:57:07] my_main Choose:2  2
+[INFO 01:57:27] root t_env: 585074 / 1000000
+[INFO 01:57:27] root Estimated time left: 31 minutes, 52 seconds. Time passed: 34 minutes, 10 seconds
+[INFO 01:58:01] my_main ================ MetaEpoch: 47 ================
+[INFO 01:58:01] my_main Time passed: 34 minutes, 43 seconds
+[INFO 01:58:01] my_main Status:[19.6875, 24.0625, 18.28125, 30.625]
+[INFO 01:58:01] my_main Choose:3  3
+[INFO 01:58:04] root Updated target network
+[INFO 01:58:21] root t_env: 595829 / 1000000
+[INFO 01:58:21] root Estimated time left: 33 minutes, 32 seconds. Time passed: 35 minutes, 3 seconds
+[INFO 01:58:54] my_main ================ MetaEpoch: 48 ================
+[INFO 01:58:54] my_main Time passed: 35 minutes, 37 seconds
+[INFO 01:58:54] my_main Status:[19.6875, 24.0625, 18.28125, 32.1875]
+[INFO 01:58:54] my_main Choose:0  0
+[INFO 01:59:15] root t_env: 607362 / 1000000
+[INFO 01:59:15] root Estimated time left: 31 minutes, 9 seconds. Time passed: 35 minutes, 58 seconds
+[INFO 01:59:49] my_main ================ MetaEpoch: 49 ================
+[INFO 01:59:49] my_main Time passed: 36 minutes, 31 seconds
+[INFO 01:59:49] my_main Status:[18.75, 24.0625, 18.28125, 32.1875]
+[INFO 01:59:49] my_main Choose:1  1
+[INFO 02:00:09] root t_env: 618772 / 1000000
+[INFO 02:00:09] root Estimated time left: 29 minutes, 47 seconds. Time passed: 36 minutes, 51 seconds
+[INFO 02:00:43] my_main ================ MetaEpoch: 50 ================
+[INFO 02:00:43] my_main Time passed: 37 minutes, 26 seconds
+[INFO 02:00:43] my_main Status:[18.75, 28.75, 18.28125, 32.1875]
+[INFO 02:00:43] my_main Choose:2  2
+[INFO 02:01:05] root t_env: 630076 / 1000000
+[INFO 02:01:05] root Estimated time left: 30 minutes, 43 seconds. Time passed: 37 minutes, 48 seconds
+[INFO 02:01:23] root Updated target network
+[INFO 02:01:39] my_main ================ MetaEpoch: 51 ================
+[INFO 02:01:39] my_main Time passed: 38 minutes, 22 seconds
+[INFO 02:01:39] my_main Status:[18.75, 28.75, 16.40625, 32.1875]
+[INFO 02:01:39] my_main Choose:3  3
+[INFO 02:01:59] root t_env: 641320 / 1000000
+[INFO 02:01:59] root Estimated time left: 28 minutes, 49 seconds. Time passed: 38 minutes, 42 seconds
+[INFO 02:02:34] my_main ================ MetaEpoch: 52 ================
+[INFO 02:02:34] my_main Time passed: 39 minutes, 16 seconds
+[INFO 02:02:34] my_main Status:[18.75, 28.75, 16.40625, 33.75]
+[INFO 02:02:34] my_main Choose:0  0
+[INFO 02:02:54] root t_env: 653219 / 1000000
+[INFO 02:02:54] root Estimated time left: 26 minutes, 21 seconds. Time passed: 39 minutes, 36 seconds
+[INFO 02:03:27] my_main ================ MetaEpoch: 53 ================
+[INFO 02:03:27] my_main Time passed: 40 minutes, 10 seconds
+[INFO 02:03:27] my_main Status:[18.90625, 28.75, 16.40625, 33.75]
+[INFO 02:03:27] my_main Choose:1  1
+[INFO 02:03:48] root t_env: 664647 / 1000000
+[INFO 02:03:48] root Estimated time left: 26 minutes, 22 seconds. Time passed: 40 minutes, 30 seconds
+[INFO 02:04:21] my_main ================ MetaEpoch: 54 ================
+[INFO 02:04:21] my_main Time passed: 41 minutes, 4 seconds
+[INFO 02:04:21] my_main Status:[18.90625, 30.3125, 16.40625, 33.75]
+[INFO 02:04:21] my_main Choose:2  2
+[INFO 02:04:25] root Updated target network
+[INFO 02:04:42] root t_env: 676520 / 1000000
+[INFO 02:04:42] root Estimated time left: 24 minutes, 43 seconds. Time passed: 41 minutes, 25 seconds
+[INFO 02:05:16] my_main ================ MetaEpoch: 55 ================
+[INFO 02:05:16] my_main Time passed: 41 minutes, 58 seconds
+[INFO 02:05:16] my_main Status:[18.90625, 30.3125, 17.96875, 33.75]
+[INFO 02:05:16] my_main Choose:3  3
+[INFO 02:05:36] root t_env: 687533 / 1000000
+[INFO 02:05:36] root Estimated time left: 25 minutes, 21 seconds. Time passed: 42 minutes, 18 seconds
+[INFO 02:06:09] my_main ================ MetaEpoch: 56 ================
+[INFO 02:06:09] my_main Time passed: 42 minutes, 52 seconds
+[INFO 02:06:09] my_main Status:[18.90625, 30.3125, 17.96875, 35.3125]
+[INFO 02:06:09] my_main Choose:0  0
+[INFO 02:06:30] root t_env: 699271 / 1000000
+[INFO 02:06:30] root Estimated time left: 23 minutes, 6 seconds. Time passed: 43 minutes, 12 seconds
+[INFO 02:07:06] my_main ================ MetaEpoch: 57 ================
+[INFO 02:07:06] my_main Time passed: 43 minutes, 48 seconds
+[INFO 02:07:06] my_main Status:[19.0625, 30.3125, 17.96875, 35.3125]
+[INFO 02:07:06] my_main Choose:1  1
+[INFO 02:07:26] root t_env: 710820 / 1000000
+[INFO 02:07:26] root Estimated time left: 23 minutes, 29 seconds. Time passed: 44 minutes, 9 seconds
+[INFO 02:07:43] root Updated target network
+[INFO 02:08:00] my_main ================ MetaEpoch: 58 ================
+[INFO 02:08:00] my_main Time passed: 44 minutes, 43 seconds
+[INFO 02:08:00] my_main Status:[19.0625, 29.84375, 17.96875, 35.3125]
+[INFO 02:08:00] my_main Choose:2  2
+[INFO 02:08:20] root t_env: 722689 / 1000000
+[INFO 02:08:20] root Estimated time left: 21 minutes, 6 seconds. Time passed: 45 minutes, 3 seconds
+[INFO 02:08:55] my_main ================ MetaEpoch: 59 ================
+[INFO 02:08:55] my_main Time passed: 45 minutes, 38 seconds
+[INFO 02:08:55] my_main Status:[19.0625, 29.84375, 17.5, 35.3125]
+[INFO 02:08:55] my_main Choose:3  3
+[INFO 02:09:15] root t_env: 733116 / 1000000
+[INFO 02:09:15] root Estimated time left: 23 minutes, 22 seconds. Time passed: 45 minutes, 58 seconds
+[INFO 02:09:49] my_main ================ MetaEpoch: 60 ================
+[INFO 02:09:49] my_main Time passed: 46 minutes, 32 seconds
+[INFO 02:09:49] my_main Status:[19.0625, 29.84375, 17.5, 36.09375]
+[INFO 02:09:49] my_main Choose:0  0
+[INFO 02:10:10] root t_env: 744969 / 1000000
+[INFO 02:10:10] root Estimated time left: 19 minutes, 46 seconds. Time passed: 46 minutes, 53 seconds
+[INFO 02:10:44] my_main ================ MetaEpoch: 61 ================
+[INFO 02:10:44] my_main Time passed: 47 minutes, 26 seconds
+[INFO 02:10:44] my_main Status:[18.90625, 29.84375, 17.5, 36.09375]
+[INFO 02:10:44] my_main Choose:1  1
+[INFO 02:10:48] root Updated target network
+[INFO 02:11:05] root t_env: 756394 / 1000000
+[INFO 02:11:05] root Estimated time left: 19 minutes, 20 seconds. Time passed: 47 minutes, 47 seconds
+[INFO 02:11:38] my_main ================ MetaEpoch: 62 ================
+[INFO 02:11:38] my_main Time passed: 48 minutes, 21 seconds
+[INFO 02:11:38] my_main Status:[18.90625, 30.9375, 17.5, 36.09375]
+[INFO 02:11:38] my_main Choose:2  2
+[INFO 02:11:59] root t_env: 767741 / 1000000
+[INFO 02:11:59] root Estimated time left: 18 minutes, 28 seconds. Time passed: 48 minutes, 41 seconds
+[INFO 02:12:32] my_main ================ MetaEpoch: 63 ================
+[INFO 02:12:32] my_main Time passed: 49 minutes, 15 seconds
+[INFO 02:12:32] my_main Status:[18.90625, 30.9375, 20.15625, 36.09375]
+[INFO 02:12:32] my_main Choose:3  3
+[INFO 02:13:12] root t_env: 782562 / 1000000
+[INFO 02:13:12] root Estimated time left: 17 minutes, 54 seconds. Time passed: 49 minutes, 55 seconds
+[INFO 02:13:26] my_main ================ MetaEpoch: 64 ================
+[INFO 02:13:26] my_main Time passed: 50 minutes, 8 seconds
+[INFO 02:13:26] my_main Status:[18.90625, 30.9375, 20.15625, 36.25]
+[INFO 02:13:26] my_main Choose:0  0
+[INFO 02:13:50] root Updated target network
+[INFO 02:14:07] root t_env: 795362 / 1000000
+[INFO 02:14:07] root Estimated time left: 14 minutes, 31 seconds. Time passed: 50 minutes, 49 seconds
+[INFO 02:14:20] my_main ================ MetaEpoch: 65 ================
+[INFO 02:14:20] my_main Time passed: 51 minutes, 3 seconds
+[INFO 02:14:20] my_main Status:[5.0, 30.9375, 20.15625, 36.25]
+[INFO 02:14:20] my_main Choose:1  1
+[INFO 02:15:02] root t_env: 807541 / 1000000
+[INFO 02:15:02] root Estimated time left: 14 minutes, 34 seconds. Time passed: 51 minutes, 45 seconds
+[INFO 02:15:15] my_main ================ MetaEpoch: 66 ================
+[INFO 02:15:15] my_main Time passed: 51 minutes, 57 seconds
+[INFO 02:15:15] my_main Status:[5.0, 24.84375, 20.15625, 36.25]
+[INFO 02:15:15] my_main Choose:2  2
+[INFO 02:15:56] root t_env: 820341 / 1000000
+[INFO 02:15:56] root Estimated time left: 12 minutes, 38 seconds. Time passed: 52 minutes, 39 seconds
+[INFO 02:16:10] my_main ================ MetaEpoch: 67 ================
+[INFO 02:16:10] my_main Time passed: 52 minutes, 52 seconds
+[INFO 02:16:10] my_main Status:[5.0, 24.84375, 2.96875, 36.25]
+[INFO 02:16:10] my_main Choose:3  3
+[INFO 02:16:50] my_main ================ MetaEpoch: 68 ================
+[INFO 02:16:50] my_main Time passed: 53 minutes, 33 seconds
+[INFO 02:16:50] my_main Status:[5.0, 24.84375, 2.96875, 37.1875]
+[INFO 02:16:50] my_main Choose:0  0
+[INFO 02:16:55] root Updated target network
+[INFO 02:17:11] root t_env: 835736 / 1000000
+[INFO 02:17:11] root Estimated time left: 13 minutes, 17 seconds. Time passed: 53 minutes, 53 seconds
+[INFO 02:17:44] my_main ================ MetaEpoch: 69 ================
+[INFO 02:17:44] my_main Time passed: 54 minutes, 27 seconds
+[INFO 02:17:44] my_main Status:[20.625, 24.84375, 2.96875, 37.1875]
+[INFO 02:17:44] my_main Choose:1  1
+[INFO 02:18:06] root t_env: 846631 / 1000000
+[INFO 02:18:06] root Estimated time left: 12 minutes, 56 seconds. Time passed: 54 minutes, 49 seconds
+[INFO 02:18:39] my_main ================ MetaEpoch: 70 ================
+[INFO 02:18:39] my_main Time passed: 55 minutes, 22 seconds
+[INFO 02:18:39] my_main Status:[20.625, 30.3125, 2.96875, 37.1875]
+[INFO 02:18:39] my_main Choose:2  2
+[INFO 02:18:59] root t_env: 857619 / 1000000
+[INFO 02:18:59] root Estimated time left: 11 minutes, 30 seconds. Time passed: 55 minutes, 42 seconds
+[INFO 02:19:32] my_main ================ MetaEpoch: 71 ================
+[INFO 02:19:32] my_main Time passed: 56 minutes, 15 seconds
+[INFO 02:19:32] my_main Status:[20.625, 30.3125, 19.53125, 37.1875]
+[INFO 02:19:32] my_main Choose:3  3
+[INFO 02:19:56] root Updated target network
+[INFO 02:20:12] root t_env: 872300 / 1000000
+[INFO 02:20:12] root Estimated time left: 10 minutes, 32 seconds. Time passed: 56 minutes, 55 seconds
+[INFO 02:20:25] my_main ================ MetaEpoch: 72 ================
+[INFO 02:20:25] my_main Time passed: 57 minutes, 8 seconds
+[INFO 02:20:25] my_main Status:[20.625, 30.3125, 19.53125, 36.09375]
+[INFO 02:20:25] my_main Choose:0  0
+[INFO 02:21:08] root t_env: 885100 / 1000000
+[INFO 02:21:08] root Estimated time left: 8 minutes, 19 seconds. Time passed: 57 minutes, 50 seconds
+[INFO 02:21:22] my_main ================ MetaEpoch: 73 ================
+[INFO 02:21:22] my_main Time passed: 58 minutes, 4 seconds
+[INFO 02:21:22] my_main Status:[1.40625, 30.3125, 19.53125, 36.09375]
+[INFO 02:21:22] my_main Choose:1  1
+[INFO 02:22:02] root t_env: 896814 / 1000000
+[INFO 02:22:02] root Estimated time left: 7 minutes, 56 seconds. Time passed: 58 minutes, 44 seconds
+[INFO 02:22:15] my_main ================ MetaEpoch: 74 ================
+[INFO 02:22:15] my_main Time passed: 58 minutes, 58 seconds
+[INFO 02:22:15] my_main Status:[1.40625, 28.28125, 19.53125, 36.09375]
+[INFO 02:22:15] my_main Choose:2  2
+[INFO 02:22:56] root t_env: 909614 / 1000000
+[INFO 02:22:56] root Estimated time left: 6 minutes, 25 seconds. Time passed: 59 minutes, 39 seconds
+[INFO 02:23:10] my_main ================ MetaEpoch: 75 ================
+[INFO 02:23:10] my_main Time passed: 59 minutes, 52 seconds
+[INFO 02:23:10] my_main Status:[1.40625, 28.28125, 3.59375, 36.09375]
+[INFO 02:23:10] my_main Choose:3  3
+[INFO 02:23:13] root Updated target network
+[INFO 02:23:49] my_main ================ MetaEpoch: 76 ================
+[INFO 02:23:49] my_main Time passed: 1 hours, 32 seconds
+[INFO 02:23:49] my_main Status:[1.40625, 28.28125, 3.59375, 37.96875]
+[INFO 02:23:49] my_main Choose:0  0
+[INFO 02:24:10] root t_env: 925074 / 1000000
+[INFO 02:24:10] root Estimated time left: 5 minutes, 56 seconds. Time passed: 1 hours, 53 seconds
+[INFO 02:24:43] my_main ================ MetaEpoch: 77 ================
+[INFO 02:24:43] my_main Time passed: 1 hours, 1 minutes, 26 seconds
+[INFO 02:24:43] my_main Status:[20.46875, 28.28125, 3.59375, 37.96875]
+[INFO 02:24:43] my_main Choose:1  1
+[INFO 02:25:04] root t_env: 935399 / 1000000
+[INFO 02:25:04] root Estimated time left: 5 minutes, 37 seconds. Time passed: 1 hours, 1 minutes, 46 seconds
+[INFO 02:25:37] my_main ================ MetaEpoch: 78 ================
+[INFO 02:25:37] my_main Time passed: 1 hours, 2 minutes, 20 seconds
+[INFO 02:25:37] my_main Status:[20.46875, 32.1875, 3.59375, 37.96875]
+[INFO 02:25:37] my_main Choose:2  2
+[INFO 02:25:58] root t_env: 946605 / 1000000
+[INFO 02:25:58] root Estimated time left: 4 minutes, 17 seconds. Time passed: 1 hours, 2 minutes, 40 seconds
+[INFO 02:26:15] root Updated target network
+[INFO 02:26:31] my_main ================ MetaEpoch: 79 ================
+[INFO 02:26:31] my_main Time passed: 1 hours, 3 minutes, 14 seconds
+[INFO 02:26:31] my_main Status:[20.46875, 32.1875, 18.75, 37.96875]
+[INFO 02:26:31] my_main Choose:3  3
+[INFO 02:27:12] root t_env: 961076 / 1000000
+[INFO 02:27:12] root Estimated time left: 3 minutes, 20 seconds. Time passed: 1 hours, 3 minutes, 55 seconds
+[INFO 02:27:26] my_main ================ MetaEpoch: 80 ================
+[INFO 02:27:26] my_main Time passed: 1 hours, 4 minutes, 8 seconds
+[INFO 02:27:26] my_main Status:[20.46875, 32.1875, 18.75, 36.875]
+[INFO 02:27:26] my_main Choose:0  0
+[INFO 02:28:07] root t_env: 973876 / 1000000
+[INFO 02:28:07] root Estimated time left: 1 minutes, 51 seconds. Time passed: 1 hours, 4 minutes, 50 seconds
+[INFO 02:28:20] my_main ================ MetaEpoch: 81 ================
+[INFO 02:28:20] my_main Time passed: 1 hours, 5 minutes, 2 seconds
+[INFO 02:28:20] my_main Status:[3.75, 32.1875, 18.75, 36.875]
+[INFO 02:28:20] my_main Choose:1  1
+[INFO 02:29:01] root t_env: 985890 / 1000000
+[INFO 02:29:01] root Estimated time left: 1 minutes, 2 seconds. Time passed: 1 hours, 5 minutes, 43 seconds
+[INFO 02:29:14] my_main ================ MetaEpoch: 82 ================
+[INFO 02:29:14] my_main Time passed: 1 hours, 5 minutes, 57 seconds
+[INFO 02:29:14] my_main Status:[3.75, 27.03125, 18.75, 36.875]
+[INFO 02:29:14] my_main Choose:2  2
+[INFO 02:29:18] root Updated target network
+[INFO 02:29:55] root t_env: 998690 / 1000000
+[INFO 02:29:55] root Estimated time left: 5 seconds. Time passed: 1 hours, 6 minutes, 38 seconds
+[INFO 02:30:08] my_main ================ MetaEpoch: 83 ================
+[INFO 02:30:08] my_main Time passed: 1 hours, 6 minutes, 51 seconds
+[INFO 02:30:08] my_main Status:[3.75, 27.03125, 3.75, 36.875]
+[INFO 02:30:08] my_main Choose:3  3
+[INFO 02:30:49] my_main ================ MetaEpoch: 84 ================
+[INFO 02:30:49] my_main Time passed: 1 hours, 7 minutes, 31 seconds
+[INFO 02:30:49] my_main Status:[3.75, 27.03125, 3.75, 38.125]
+[INFO 02:30:49] my_main Choose:0  0
+[INFO 02:30:49] root t_env: 1008291 / 1000000
+[INFO 02:30:49] root Estimated time left: -. Time passed: 1 hours, 7 minutes, 31 seconds

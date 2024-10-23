@@ -1,0 +1,12 @@
+{
+  "meta_loss": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -0.038894228026038036
+    }
+  ],
+  "meta_loss_T": [
+    204800
+  ]
+}

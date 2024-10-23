@@ -1,0 +1,112 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/home/cike/code/src",
+    "dependencies": [
+      "munch==2.5.0",
+      "numpy==1.21.6",
+      "PyYAML==5.4.1",
+      "sacred==0.8.2",
+      "torch==1.10.2"
+    ],
+    "mainfile": "meta_main.py",
+    "name": "pymarl",
+    "repositories": [],
+    "sources": [
+      [
+        "meta_main.py",
+        "_sources/meta_main_f321de57bc973599f7d0d0e752edf6c1.py"
+      ],
+      [
+        "utils/config_utils.py",
+        "_sources/config_utils_11a418cc99d65a52a4ab3d9c9e93f913.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_867f86b10403f8b7e6826558d04fb18e.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"src/meta_main.py\", line 43, in my_main\n    run(_run, config, _log)\n",
+    "  File \"src/meta_main.py\", line 79, in run\n    pop = pop_REGISTRY[args.pop](args, logger)\n",
+    "AttributeError: 'types.SimpleNamespace' object has no attribute 'pop'\n"
+  ],
+  "heartbeat": "2024-10-22T02:39:44.530662",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz",
+    "gpus": {
+      "driver_version": "470.182.03",
+      "gpus": [
+        {
+          "model": "Quadro RTX 8000",
+          "persistence_mode": false,
+          "total_memory": 48601
+        },
+        {
+          "model": "Tesla P100-PCIE-16GB",
+          "persistence_mode": false,
+          "total_memory": 16280
+        },
+        {
+          "model": "Tesla P100-PCIE-16GB",
+          "persistence_mode": false,
+          "total_memory": 16280
+        },
+        {
+          "model": "Tesla P100-PCIE-16GB",
+          "persistence_mode": false,
+          "total_memory": 16280
+        },
+        {
+          "model": "Tesla P100-PCIE-16GB",
+          "persistence_mode": false,
+          "total_memory": 16280
+        }
+      ]
+    },
+    "hostname": "89ddac7113b8",
+    "os": [
+      "Linux",
+      "Linux-4.15.0-213-generic-x86_64-with-debian-buster-sid"
+    ],
+    "python_version": "3.7.12"
+  },
+  "meta": {
+    "command": "my_main",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2024-10-22T02:39:44.518192",
+  "status": "FAILED",
+  "stop_time": "2024-10-22T02:39:44.534301"
+}
